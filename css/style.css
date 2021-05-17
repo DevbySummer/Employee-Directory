@@ -9,9 +9,11 @@ body {
     justify-content: center;
     font-family: 'Lato', sans-serif;
     max-width: 1000px;
+    background: rgb(232, 232, 232);
 }
 h1 {
     font-size: 20px;
+    color: rgb(70, 70, 70);
     text-transform: uppercase;
 }
 h2 {
@@ -34,7 +36,8 @@ header {
     display: flex;
     flex-basis: auto;
     justify-content: space-around;
-    border: 1px solid gray;
+    background: rgb(245, 245, 245);
+    border: 1px solid rgb(177, 177, 177);
     margin-bottom: 25px;
     border-radius: 5px;
 }
