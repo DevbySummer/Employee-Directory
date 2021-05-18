@@ -73,8 +73,8 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    width: 350px;
-    height: 400px;
+    width: 370px;
+    height: 430px;
     background: rgb(225, 225, 225);
     margin-left: auto;
     margin-right: auto;
@@ -87,6 +87,7 @@ header {
     margin-top: 10px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 .modal-content {
     display: flex;
@@ -107,10 +108,14 @@ header {
 }
 .modal p {
     padding-top: 8px;
+    color: rgba(138, 138, 138, 0.9);
 }
 .modal hr {
     width: 280px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-color: rgb(223, 223, 223);
+    margin-top: 25px;
+    margin-bottom: 18px;
+    border-color: rgba(223, 223, 223, 0.4);
+}
+.hidden {
+    display: none;
 }
