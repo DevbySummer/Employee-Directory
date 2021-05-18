@@ -69,3 +69,48 @@ header {
     bottom: 0;
     background: rgba(100, 100, 100, 0.4);
 }
+.modal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 350px;
+    height: 400px;
+    background: rgb(225, 225, 225);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.model-close {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.modal .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.modal p {
+    padding-top: 8px;
+}
+.modal hr {
+    width: 280px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgb(223, 223, 223);
+}
