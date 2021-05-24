@@ -23,12 +23,12 @@ function displayEmployees(employeeData) {
     employees.forEach((employee, index) => {
         let name = employee.name;
         let email = employee.email;
-        let ciy = employee.location.city;
+        let city = employee.location.city;
         let picture = employee.picture;
 
         employeeHTML += `
             <div class="card" data-index="${index}">
-                <img class="avatar src="${picture.large}"/>
+                <img class="avatar" src="${picture.large}"/>
                 <div class="text-container">
                     <h2 class="name">${name.first} ${name.last}</h2>
                     <p class="email">${email}</p>
