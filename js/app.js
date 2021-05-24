@@ -9,3 +9,9 @@ information. */
 const modalClose = document.querySelector('.modal-close'); /**  modal’s close button */
 
 // Fetch
+fetch(`https://randomuser.me/api/?results=12&inc=name, picture,
+email, location, phone, dob &noinfo &nat=US`)
+    .then(response => response.json())
+    .then(response => response.results)
+    .then(displayEmployees)
+    .catch(err => console.log(err))
