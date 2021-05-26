@@ -34,7 +34,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: repeat(4, 1fr);
     grid-gap: 25px;
-
 }
 .card {
     display: flex;
@@ -80,7 +79,7 @@ header {
     margin-right: auto;
     border-radius: 5px;
 }
-.model-close {
+.modal-close {
     display: flex;
     margin-left: auto;
     margin-right: 30px;
