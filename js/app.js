@@ -41,7 +41,7 @@ function displayEmployees(employeeData) {
         gridContainer.innerHTML = employeeHTML;
 
 }
-
+// Display Modal
 function displayModal(index) {
     let { name, dob, phone, email, location: { city, street, state, postcode}, picture } = employees[index];
     let date = new Date(dob.date);
@@ -63,3 +63,13 @@ function displayModal(index) {
     overlay.classList.remove('hidden');
     modalContainer.innerHTML = modalHTML;
 }
+// Event Listener
+gridContainer.addEventListener('click', e => {
+
+    if(e.target !== gridContainer) {
+        const card = e.target.closest('.card');
+        const index = card.getAttribute('data-index');
+
+        displayModal(index);
+    }
+});
