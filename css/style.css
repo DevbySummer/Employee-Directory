@@ -27,12 +27,8 @@ header {
     margin-bottom: 30px;
 }
 .grid-container {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     display: grid;
-    grid-template-columns: repeat(3, 301fr);
-    /* grid-auto-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 25px;
     justify-content: center;
@@ -40,7 +36,6 @@ header {
 .card {
     display: flex;
     flex-basis: auto;
-    /* justify-content: space-around; */
     background: rgb(245, 245, 245);
     border: 1px solid rgb(177, 177, 177);
     border-radius: 5px;
@@ -50,7 +45,6 @@ header {
     /* align-self: center; */
     height: 130px;
     padding: 13px;
-    /* height: 75%; */
     border-radius: 50%;
 }
 .card .text-container {
