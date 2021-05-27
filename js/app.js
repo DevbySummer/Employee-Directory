@@ -52,23 +52,23 @@ function displayModal(index) {
     let email = employees[index].email;
     let city = employees[index].location.city;
     let phone = employees[index].phone;
-    let streetNumber = employees[index].location.number;
-    let streetName = employees[index].location.name;
+    let streetNumber = employees[index].location.street.number;
+    let streetName = employees[index].location.street.name;
     let state = employees[index].location.state;
-    let postCode = employees[index].location.postcode;
+    let postCode = employees[index].location.country.postcode;
     let dob = employees[index].dob.date;
 
     const modalHTML = `
-        <img class="avatar"  src="${picture.large}"/>
+        <img class="avatar"  src="${picture}"/>
         <div class="text-container">
-            <h2 class="name">${name.first} ${name.last}</h2>
+            <h2 class="name">${firstName} ${lastName}</h2>
             <p class="email">${email}</p>
             <p class="address">${city}</p>
             <hr />
             <p>${phone}</p>
-            <p class="address">${street.name}, ${street.number} ${postcode}</p>
+            <p class="address">${streetNumber}, ${streetName} ${postCode}</p>
             <p>Birthday: 
-            ${date.getMonth()}${date.getDate()}${date.getFullYear()}</p>
+            <p>${dob}</p>
         </div>
     `
 
