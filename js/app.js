@@ -43,8 +43,20 @@ function displayEmployees(employeeData) {
 }
 // Display Modal
 function displayModal(index) {
-    let { name, dob, phone, email, location: { city, street, state, postcode}, picture } = employees[index];
-    let date = new Date(dob.date);
+    // let { name, dob, phone, email, location: { city, street, state, postcode}, picture } = employees[index];
+    // let date = new Date(dob.date);
+
+    let picture = employees[index].picture.large;
+    let firstName = employees[index].name.first;
+    let lastName = employees[index].name.last;
+    let email = employees[index].email;
+    let city = employees[index].location.city;
+    let phone = employees[index].phone;
+    let streetNumber = employees[index].location.number;
+    let streetName = employees[index].location.name;
+    let state = employees[index].location.state;
+    let postCode = employees[index].location.postcode;
+    let dob = employees[index].dob.date;
 
     const modalHTML = `
         <img class="avatar"  src="${picture.large}"/>
@@ -54,7 +66,7 @@ function displayModal(index) {
             <p class="address">${city}</p>
             <hr />
             <p>${phone}</p>
-            <p class="address">${street}, ${street} ${postcode}</p>
+            <p class="address">${street.name}, ${street.number} ${postcode}</p>
             <p>Birthday: 
             ${date.getMonth()}${date.getDate()}${date.getFullYear()}</p>
         </div>
